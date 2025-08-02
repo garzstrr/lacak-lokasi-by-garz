@@ -1,174 +1,318 @@
-<html lang="en">
+<html class="scroll-smooth" lang="id">
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   bintangStrrSilit &amp; GarzZOfficiall
+   Lacak Lokasi Orang dengan Nomor HP
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;family=Orbitron:wght@700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
   <style>
    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0f172a;
+      font-family: 'Inter', sans-serif;
     }
   </style>
  </head>
- <body class="min-h-screen flex flex-col">
-  <header class="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 shadow-lg">
-   <div class="flex items-center space-x-3">
-    <img alt="Logo bintangStrrSilit, stylized white star on dark purple background" class="rounded-full" height="48" src="https://storage.googleapis.com/a1aa/image/579a4806-49b3-4cd8-7e85-d3d9b00a0289.jpg" width="48"/>
-    <h1 class="text-white text-2xl font-orbitron font-bold tracking-wide">
-     bintangStrrSilit &amp; GarzZOfficiall
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <header class="bg-blue-600 text-white shadow-md">
+   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-semibold flex items-center gap-2">
+     <i class="fas fa-map-marker-alt">
+     </i>
+     LacakLokasiHP
     </h1>
+    <nav class="hidden md:flex space-x-6 text-white font-medium">
+     <a class="hover:underline" href="#home">
+      Beranda
+     </a>
+     <a class="hover:underline" href="#fitur">
+      Fitur
+     </a>
+     <a class="hover:underline" href="#cara">
+      Cara Pakai
+     </a>
+     <a class="hover:underline" href="#kontak">
+      Kontak
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-white focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
    </div>
-   <nav class="space-x-6 hidden md:flex text-white font-semibold">
-    <a class="hover:text-purple-400 transition" href="#home">
-     Home
+   <div class="hidden md:hidden bg-blue-700 text-white px-4 py-3 space-y-2" id="mobile-menu">
+    <a class="block hover:underline" href="#home">
+     Beranda
     </a>
-    <a class="hover:text-purple-400 transition" href="#about">
-     About
+    <a class="block hover:underline" href="#fitur">
+     Fitur
     </a>
-    <a class="hover:text-purple-400 transition" href="#gallery">
-     Gallery
+    <a class="block hover:underline" href="#cara">
+     Cara Pakai
     </a>
-    <a class="hover:text-purple-400 transition" href="#contact">
-     Contact
+    <a class="block hover:underline" href="#kontak">
+     Kontak
     </a>
-   </nav>
-   <button aria-label="Toggle menu" class="md:hidden text-white focus:outline-none" id="menu-btn">
-    <i class="fas fa-bars fa-lg">
-    </i>
-   </button>
+   </div>
   </header>
-  <nav class="hidden flex-col space-y-4 bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 px-6 py-4 text-white font-semibold md:hidden" id="mobile-menu">
-   <a class="hover:text-purple-400 transition" href="#home">
-    Home
-   </a>
-   <a class="hover:text-purple-400 transition" href="#about">
-    About
-   </a>
-   <a class="hover:text-purple-400 transition" href="#gallery">
-    Gallery
-   </a>
-   <a class="hover:text-purple-400 transition" href="#contact">
-    Contact
-   </a>
-  </nav>
-  <main class="flex-grow">
-   <section class="relative overflow-hidden flex flex-col items-center justify-center text-center px-6 py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900" id="home">
-    <img alt="Cosmic galaxy background with stars, nebula clouds in purple and blue hues, futuristic and vibrant" class="absolute inset-0 w-full h-full object-cover opacity-30 -z-10" height="400" src="https://storage.googleapis.com/a1aa/image/138ca638-3152-4edd-7dff-62ddb46d91c7.jpg" width="600"/>
-    <h2 class="text-5xl md:text-6xl font-orbitron font-extrabold text-white drop-shadow-lg mb-4">
-     Welcome to bintangStrrSilit &amp; GarzZOfficiall
+  <main class="flex-grow container mx-auto px-4 py-10" id="home">
+   <section class="text-center max-w-3xl mx-auto">
+    <h2 class="text-4xl font-extrabold text-blue-700 mb-4">
+     Lacak Lokasi Orang dengan Nomor HP
     </h2>
-    <p class="max-w-xl text-lg md:text-xl text-purple-300 font-semibold drop-shadow-md">
-     The ultimate creative duo bringing you stellar vibes and official beats.
+    <p class="text-gray-700 mb-8">
+     Masukkan nomor HP untuk mengetahui lokasi terakhir yang terdeteksi. Layanan ini menggunakan teknologi pelacakan berbasis nomor telepon untuk membantu Anda menemukan lokasi dengan mudah dan cepat.
     </p>
-    <div class="mt-10 flex space-x-6">
-     <a class="px-6 py-3 bg-purple-700 hover:bg-purple-600 rounded-full text-white font-semibold shadow-lg transition" href="#gallery">
-      Explore Gallery
-     </a>
-     <a class="px-6 py-3 border-2 border-purple-700 hover:border-purple-600 rounded-full text-purple-300 hover:text-purple-100 font-semibold transition" href="#contact">
-      Get in Touch
-     </a>
-    </div>
-   </section>
-   <section class="px-6 py-16 max-w-6xl mx-auto text-white" id="about">
-    <h3 class="text-4xl font-orbitron font-bold mb-8 text-center text-purple-400">
-     About Us
-    </h3>
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-     <div>
-      <img alt="Two creative artists collaborating in a modern studio with music equipment and digital art tools, vibrant colors" class="rounded-lg shadow-lg" height="400" src="https://storage.googleapis.com/a1aa/image/ee66157b-9a33-4b67-2297-cc8dd961d11a.jpg" width="600"/>
+    <form autocomplete="off" class="bg-white shadow-md rounded-lg p-6 max-w-md mx-auto" id="tracking-form">
+     <label class="block text-left font-semibold mb-2 text-gray-800" for="phone">
+      Masukkan Nomor HP
+     </label>
+     <div class="flex gap-2">
+      <input class="flex-grow border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="phone" name="phone" pattern="^08[0-9]{8,12}$" placeholder="Contoh: 081234567890" required="" type="tel"/>
+      <button class="bg-blue-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-700 transition" type="submit">
+       Lacak
+      </button>
      </div>
-     <div class="space-y-6 text-lg text-purple-200 font-semibold leading-relaxed">
-      <p>
-       bintangStrrSilit is a visionary artist known for blending cosmic themes with modern beats, creating an immersive experience for fans worldwide.
-      </p>
-      <p>
-       GarzZOfficiall complements this vision with official, high-quality production and a unique style that pushes boundaries in music and digital art.
-      </p>
-      <p>
-       Together, they form a powerhouse duo dedicated to delivering stellar content and unforgettable vibes.
-      </p>
+     <p class="mt-2 text-sm text-gray-500">
+      * Nomor harus diawali dengan 08 dan terdiri dari 10-14 digit.
+     </p>
+    </form>
+    <div class="mt-10 bg-white shadow-md rounded-lg p-6 max-w-md mx-auto hidden" id="result">
+     <h3 class="text-xl font-semibold text-blue-700 mb-4">
+      Hasil Pelacakan
+     </h3>
+     <div class="text-gray-700 space-y-2" id="location-info">
+     </div>
+     <div class="mt-6 rounded-md overflow-hidden shadow-lg" id="map-container">
+      <img alt="Peta lokasi terakhir nomor HP" class="w-full h-64 object-cover" id="map-image" src=""/>
      </div>
     </div>
    </section>
-   <section class="px-6 py-16 max-w-7xl mx-auto text-white" id="gallery">
-    <h3 class="text-4xl font-orbitron font-bold mb-12 text-center text-purple-400">
-     Gallery
-    </h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-     <img alt="Abstract digital art in purple and blue tones featuring stars and cosmic elements, futuristic style" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/4326366a-25c5-4800-17db-c7c5bd4a566a.jpg" width="400"/>
-     <img alt="Modern music studio with synthesizers, LED lights glowing purple and blue, creative atmosphere" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/20f5834f-1216-436d-2860-b4e69edaf5c7.jpg" width="400"/>
-     <img alt="Close-up of DJ mixing console with colorful purple and blue lights, hands adjusting knobs" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/2cb1f9ff-b992-4c62-8c2b-6253d6ee813b.jpg" width="400"/>
-     <img alt="Cosmic nebula with bright stars and galaxies in purple and blue hues, space theme" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/2479afdc-338c-4210-17b5-b507e38be59b.jpg" width="400"/>
-     <img alt="Digital portrait of bintangStrrSilit with starry cosmic background in purple and blue colors" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/18f46976-3695-4d19-e107-4c4e692487dd.jpg" width="400"/>
-     <img alt="GarzZOfficiall performing on stage with neon purple and blue lights, energetic crowd" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/9f9fd3a9-6da5-43ba-c820-5e181e1ff5b6.jpg" width="400"/>
-     <img alt="Futuristic headphones with glowing purple accents on a dark background, tech style" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/141f69d5-9fcb-4bc4-b384-34cc631fb721.jpg" width="400"/>
-     <img alt="Vinyl record spinning with purple and blue light reflections, retro and modern fusion" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" height="300" src="https://storage.googleapis.com/a1aa/image/4acb339a-85c1-4065-e30a-6314e47c5d6a.jpg" width="400"/>
+   <section class="mt-20 max-w-4xl mx-auto" id="fitur">
+    <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">
+     Fitur Utama
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+      <i class="fas fa-search-location fa-3x text-blue-600 mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       Pelacakan Akurat
+      </h3>
+      <p class="text-gray-600">
+       Menampilkan lokasi terakhir dengan tingkat akurasi tinggi berdasarkan nomor HP.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+      <i class="fas fa-shield-alt fa-3x text-blue-600 mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       Privasi Terjaga
+      </h3>
+      <p class="text-gray-600">
+       Data Anda dan orang yang dilacak dijaga kerahasiaannya sesuai standar keamanan.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+      <i class="fas fa-mobile-alt fa-3x text-blue-600 mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       Mudah Digunakan
+      </h3>
+      <p class="text-gray-600">
+       Antarmuka sederhana yang dapat digunakan siapa saja tanpa perlu keahlian teknis.
+      </p>
+     </div>
     </div>
    </section>
-   <section class="px-6 py-16 max-w-3xl mx-auto text-white" id="contact">
-    <h3 class="text-4xl font-orbitron font-bold mb-8 text-center text-purple-400">
-     Contact Us
-    </h3>
-    <form class="bg-indigo-900 bg-opacity-70 rounded-lg p-8 shadow-lg space-y-6">
-     <div>
-      <label class="block mb-2 font-semibold text-purple-300" for="name">
-       Name
+   <section class="mt-20 max-w-3xl mx-auto" id="cara">
+    <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">
+     Cara Menggunakan
+    </h2>
+    <ol class="list-decimal list-inside space-y-4 text-gray-700 text-lg">
+     <li>
+      Masukkan nomor HP yang ingin Anda lacak pada kolom yang tersedia.
+     </li>
+     <li>
+      Pastikan nomor diawali dengan 08 dan memiliki 10-14 digit.
+     </li>
+     <li>
+      Klik tombol "Lacak" untuk memulai proses pelacakan.
+     </li>
+     <li>
+      Tunggu beberapa saat hingga hasil lokasi muncul di bawah form.
+     </li>
+     <li>
+      Anda dapat melihat lokasi terakhir pada peta yang disediakan.
+     </li>
+    </ol>
+    <img alt="Ilustrasi seseorang menggunakan smartphone untuk melacak lokasi nomor HP" class="mt-8 rounded-lg shadow-md mx-auto" height="300" src="https://storage.googleapis.com/a1aa/image/05b3453a-9974-4fd2-94c0-c17e904d022d.jpg" width="600"/>
+   </section>
+   <section class="mt-20 max-w-3xl mx-auto mb-20" id="kontak">
+    <h2 class="text-3xl font-bold text-center text-blue-700 mb-10">
+     Kontak Kami
+    </h2>
+    <form autocomplete="off" class="bg-white shadow-md rounded-lg p-6" id="contact-form">
+     <div class="mb-4">
+      <label class="block font-semibold mb-2 text-gray-800" for="name">
+       Nama
       </label>
-      <input class="w-full px-4 py-3 rounded-md bg-indigo-800 text-white placeholder-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" name="name" placeholder="Nama lengkap Anda" required="" type="text"/>
      </div>
-     <div>
-      <label class="block mb-2 font-semibold text-purple-300" for="email">
+     <div class="mb-4">
+      <label class="block font-semibold mb-2 text-gray-800" for="email">
        Email
       </label>
-      <input class="w-full px-4 py-3 rounded-md bg-indigo-800 text-white placeholder-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+      <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" name="email" placeholder="email@domain.com" required="" type="email"/>
      </div>
-     <div>
-      <label class="block mb-2 font-semibold text-purple-300" for="message">
-       Message
+     <div class="mb-4">
+      <label class="block font-semibold mb-2 text-gray-800" for="message">
+       Pesan
       </label>
-      <textarea class="w-full px-4 py-3 rounded-md bg-indigo-800 text-white placeholder-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+      <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none" id="message" name="message" placeholder="Tulis pesan Anda di sini" required="" rows="4"></textarea>
      </div>
-     <button class="w-full bg-purple-700 hover:bg-purple-600 text-white font-bold py-3 rounded-full transition" type="submit">
-      Send Message
+     <button class="bg-blue-600 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-700 transition" type="submit">
+      Kirim Pesan
      </button>
     </form>
    </section>
   </main>
-  <footer class="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-purple-300 text-center py-6 mt-12">
-   <p class="text-sm">
-    © 2024 bintangStrrSilit &amp; GarzZOfficiall. All rights reserved.
-   </p>
-   <div class="mt-3 flex justify-center space-x-6 text-xl">
-    <a aria-label="Facebook" class="hover:text-purple-400 transition" href="https://facebook.com">
-     <i class="fab fa-facebook-f">
-     </i>
-    </a>
-    <a aria-label="Twitter" class="hover:text-purple-400 transition" href="https://twitter.com">
-     <i class="fab fa-twitter">
-     </i>
-    </a>
-    <a aria-label="Instagram" class="hover:text-purple-400 transition" href="https://instagram.com">
-     <i class="fab fa-instagram">
-     </i>
-    </a>
-    <a aria-label="YouTube" class="hover:text-purple-400 transition" href="https://youtube.com">
-     <i class="fab fa-youtube">
-     </i>
-    </a>
+  <footer class="bg-blue-600 text-white py-6 mt-auto">
+   <div class="container mx-auto px-4 text-center space-y-1">
+    <p>
+     © 2024 LacakLokasiHP. Semua hak cipta dilindungi.
+    </p>
+    <p class="text-sm italic">
+     Website ini dibuat oleh <span class="font-semibold">GarzZOfficial</span>
+    </p>
    </div>
   </footer>
   <script>
-   const menuBtn = document.getElementById('menu-btn');
+   // Toggle mobile menu
+    const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-
     menuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // Simulasi pelacakan lokasi berdasarkan nomor HP
+    const trackingForm = document.getElementById('tracking-form');
+    const resultDiv = document.getElementById('result');
+    const locationInfo = document.getElementById('location-info');
+    const mapImage = document.getElementById('map-image');
+
+    // Data dummy lokasi berdasarkan nomor HP (contoh)
+    const dummyLocations = {
+      '081234567890': {
+        city: 'Jakarta',
+        region: 'DKI Jakarta',
+        country: 'Indonesia',
+        lat: -6.2088,
+        lon: 106.8456,
+      },
+      '081298765432': {
+        city: 'Surabaya',
+        region: 'Jawa Timur',
+        country: 'Indonesia',
+        lat: -7.2575,
+        lon: 112.7521,
+      },
+      '081355512345': {
+        city: 'Bandung',
+        region: 'Jawa Barat',
+        country: 'Indonesia',
+        lat: -6.9175,
+        lon: 107.6191,
+      },
+      '081377712345': {
+        city: 'Yogyakarta',
+        region: 'DI Yogyakarta',
+        country: 'Indonesia',
+        lat: -7.7956,
+        lon: 110.3695,
+      },
+      '081399912345': {
+        city: 'Medan',
+        region: 'Sumatera Utara',
+        country: 'Indonesia',
+        lat: 3.5952,
+        lon: 98.6722,
+      },
+      '081322212345': {
+        city: 'Semarang',
+        region: 'Jawa Tengah',
+        country: 'Indonesia',
+        lat: -6.9667,
+        lon: 110.4167,
+      },
+      '081344412345': {
+        city: 'Makassar',
+        region: 'Sulawesi Selatan',
+        country: 'Indonesia',
+        lat: -5.1477,
+        lon: 119.4327,
+      },
+      '081366612345': {
+        city: 'Denpasar',
+        region: 'Bali',
+        country: 'Indonesia',
+        lat: -8.6500,
+        lon: 115.2167,
+      },
+      '081388812345': {
+        city: 'Palembang',
+        region: 'Sumatera Selatan',
+        country: 'Indonesia',
+        lat: -2.9761,
+        lon: 104.7754,
+      },
+      '081300012345': {
+        city: 'Balikpapan',
+        region: 'Kalimantan Timur',
+        country: 'Indonesia',
+        lat: -1.2678,
+        lon: 116.8286,
+      }
+    };
+
+    trackingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const phone = trackingForm.phone.value.trim();
+
+      if (!dummyLocations[phone]) {
+        locationInfo.innerHTML = `<p class="text-red-600 font-semibold">Nomor HP tidak ditemukan dalam database pelacakan.</p>`;
+        mapImage.src = 'https://placehold.co/600x400/png?text=Lokasi+tidak+ditemukan';
+        mapImage.alt = 'Gambar peta lokasi tidak ditemukan';
+        resultDiv.classList.remove('hidden');
+        return;
+      }
+
+      const loc = dummyLocations[phone];
+      locationInfo.innerHTML = `
+        <p><strong>Nomor HP:</strong> ${phone}</p>
+        <p><strong>Kota:</strong> ${loc.city}</p>
+        <p><strong>Provinsi:</strong> ${loc.region}</p>
+        <p><strong>Negara:</strong> ${loc.country}</p>
+        <p><strong>Koordinat:</strong> ${loc.lat.toFixed(4)}, ${loc.lon.toFixed(4)}</p>
+      `;
+
+      const mapUrl = `https://placehold.co/600x400/png?text=Peta+Lokasi+${encodeURIComponent(
+        loc.city
+      )}+(${loc.lat.toFixed(4)},${loc.lon.toFixed(4)})`;
+
+      mapImage.src = mapUrl;
+      mapImage.alt = `Peta lokasi terakhir nomor HP di ${loc.city}, ${loc.region}, ${loc.country}`;
+      resultDiv.classList.remove('hidden');
+    });
+
+    // Kontak form dummy submit
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Terima kasih telah menghubungi kami. Pesan Anda telah diterima.');
+      contactForm.reset();
     });
   </script>
  </body>
